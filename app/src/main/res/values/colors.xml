@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffc107</color>
+    <color name="collapsedTitleTextColorAlarm">#ffffff</color>
+    <color name="activity_bg_white">#fefefe</color>
+    <color name="add_button_bg_color">#03a9f4</color>
+    <color name="set_activity_top_bg_color">#d3d4d4</color>
+    <color name="set_alarm_ripple_color_bg">#6b6b6e</color>
+    <color name="set_alarm_rv_bg">#f3f3f5</color>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.master.faiz.alarmclock.RepeatationDialogActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#e7e4e4"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/add_alarm_repeat_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e7e4e4"
+            android:padding="35dp">
+
+            <RadioButton
+                android:id="@+id/radio_button_once"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Once" />
+
+            <RadioButton
+                android:id="@+id/radio_button_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Daily" />
+
+            <RadioButton
+                android:id="@+id/radio_button_mon_to_fri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Mon to Fri" />
+
+
+        </RadioGroup>
+
+
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:id="@+id/add_alarm_repeat_done"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/forward_yellow"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

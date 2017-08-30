@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="alarm_expandedtitle_margin_start">2dp</dimen>
+    <dimen name="alarm_expandedtitle_margin_bottom">2dp</dimen>
+    <dimen name="alarm_appbar_elevation">15dp</dimen>
+    <dimen name="set_activity_margin_start">30dp</dimen>
+    <dimen name="set_activity_tv1_margin_top">15dp</dimen>
+    <dimen name="set_activity_tv2_margin_top">35dp</dimen>
+    <dimen name="set_activity_imgView_margin_top">25dp</dimen>
+    <dimen name="set_activity_imgView_margin_end">20dp</dimen>
+</resources>

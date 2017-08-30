@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_white"
+    tools:context="com.master.faiz.alarmclock.AddAlarmActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/set_activity_top_bg_color"
+
+        android:id="@+id/relative_one_add_alarm">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="OK"
+            android:id="@+id/set_activity_OK"
+            android:textColor="#fff"
+            android:background="@drawable/add_button_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary"/>
+        <Button android:layout_width="25dp"
+               android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/set_activity_Cancel"
+
+            android:layout_marginTop="12dp"
+            android:onClick="onClickCancel"
+            android:layout_marginStart="10dp"
+               android:background="@drawable/cancel"/>
+
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/activity_bg_white"
+        android:id="@+id/relative_two_add_alarm"
+        android:layout_below="@+id/relative_one_add_alarm">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#f3f3f5"
+            android:id="@+id/relative_inside_one"
+            android:layout_height="75dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginStart="@dimen/set_activity_margin_start"
+                android:layout_marginTop="@dimen/set_activity_tv1_margin_top"
+                android:text="Repeat"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/set_activity_repeat"
+                android:layout_marginStart="@dimen/set_activity_margin_start"
+                android:layout_marginTop="@dimen/set_activity_tv2_margin_top"
+                android:text="None"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/set_activity_imgView1"
+                android:layout_centerVertical="true"
+                android:background="@drawable/forward_blue"
+                android:layout_marginTop="@dimen/set_activity_imgView_margin_top"
+                android:layout_marginEnd="@dimen/set_activity_imgView_margin_end"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_inside_two"
+            android:layout_below="@+id/relative_inside_one"
+            android:background="#f3f3f5"
+            android:layout_marginTop="0.2dip"
+            android:layout_height="75dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginStart="@dimen/set_activity_margin_start"
+                android:layout_marginTop="@dimen/set_activity_tv1_margin_top"
+                android:text="Ringtone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/set_activity_ringtone"
+                android:layout_marginStart="@dimen/set_activity_margin_start"
+                android:layout_marginTop="@dimen/set_activity_tv2_margin_top"
+                android:text="Default Ringtone"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/set_activity_imgView2"
+                android:layout_centerVertical="true"
+                android:background="@drawable/forward_blue"
+                android:layout_marginTop="@dimen/set_activity_imgView_margin_top"
+                android:layout_marginEnd="@dimen/set_activity_imgView_margin_end"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#f3f3f5"
+            android:id="@+id/relative_inside_three"
+            android:layout_marginTop="0.2dip"
+            android:layout_below="@+id/relative_inside_two"
+            android:layout_height="75dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/set_activity_margin_start"
+                android:text="Vibrate"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/set_activity_imgView_margin_end"
+                android:id="@+id/alarm_vibrate_switch"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/text_input">
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:hint="Label Name"
+        android:id="@+id/set_activity_alarm_speech_text"
+        android:layout_marginStart="5dp"
+        android:inputType="textLongMessage"
+        android:background="#ffffff"/>
+</android.support.design.widget.TextInputLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/set_activity_voiceRecog"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/mic50"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:id="@+id/card_view_date_picker"
+
+        android:layout_below="@+id/relative_two_add_alarm"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="5dp"
+        >
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="0 : 0"
+           android:textSize="60dp"
+           android:gravity="center"
+           android:textColor="#000"
+           android:id="@+id/set_activity_time"
+           android:background="@color/colorAccent"/>
+
+
+        <!--<TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/set_activity_alarm_time_picker"/>-->
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/set_activity_alarm_stop_alarm"
+        android:layout_below="@+id/card_view_date_picker"
+        android:src="@drawable/stop"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/set_activity_alarm_delete_alarm"
+        android:layout_below="@+id/card_view_date_picker"
+        android:src="@drawable/trash"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="45dp"
+        />
+
+
+
+</RelativeLayout>
